@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Goblin+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+header {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.399);
+  background-color: white;
+  z-index: 1000;
+  max-width: 100%;
+}
+.nav-logo {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 50px;
+}
+.nav-logo span:nth-child(2),
+.nav-logo span:nth-child(4) {
+  transition: all 0.55s linear;
+}
+header:hover .nav-logo span:nth-child(2),
+header:hover .nav-logo span:nth-child(4) {
+  color: red;
+  transform: translatey(-8px);
+}
+.nav-logo span:nth-child(1),
+.nav-logo span:nth-child(3) {
+  transition: all 0.55s linear;
+}
+header:hover .nav-logo span:nth-child(1),
+header:hover .nav-logo span:nth-child(3) {
+  color: rgb(104, 103, 103);
+  transform: translatey(-8px);
+}
+nav .nav-list {
+  width: 600px;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+nav .nav-list a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.55s ease-out;
+}
+nav .nav-list a:hover {
+  color: red;
+}
+nav .nav-list a i:hover::after {
+  content: "search";
+  font-size: 14px;
+  color: red;
+  display: inline-block;
+}
+#menu-icon {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.55s ease;
+  display: none;
+}
+#menu-icon:hover {
+  color: red;
+}
+input {
+  border: none;
+  border-radius: 10px;
+  border: 2px solid rgba(40, 39, 39, 0.2);
+}
+input::placeholder {
+  color: rgb(130, 130, 130);
+  font-size: 10px;
+  text-align: center;
+  padding: 20px 45px 20px 20px;
+}
+.checkbtn {
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+/* ____main_______ */
+h1 {
+  margin: 40px 0;
+  font-weight: 400;
+  font-size: 2.25rem;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+}
+h1::before {
+  content: "";
+  background-color: red;
+  height: 2px;
+  width: 6%;
+  display: inline-block;
+  margin: 0 20px 0 -15px;
+}
+.container {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.container p {
+  display: block;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #262626;
+  letter-spacing: normal;
+  text-align: justify;
+  line-height: 1.5;
+  width: 470px;
+  height: 220px;
+}
+.container p:nth-child(1) {
+  margin-bottom: 25px;
+}
+.container p::first-letter {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1;
+}
+.container p:nth-child(1),
+.container p:nth-child(5) {
+  margin-left: 8rem;
+}
+.container p:nth-child(3) {
+  margin-right: 8rem;
+}
+.picture{
+  display: flex;
+  justify-content: center;
+  margin: -70px 0 40px;
+}
+.picture img {
+  width: 500px;
+  height: 100%;
+  box-shadow: 8px 16px 16px hsl(0deg 0% 0% / 0.25);
+  border-radius: 1px;
+}
+/* ----FOOTER----- */
+
+footer {
+  max-width: 100%;
+  height: 150px;
+  background-color: rgb(43, 42, 42);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+address a {
+  color: rgb(145, 144, 144);
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 0.55s ease;
+}
+div.footer-logo {
+  color: rgb(145, 144, 144);
+}
+div.footer-logo p:nth-child(5) {
+  font-size: 7px;
+  letter-spacing: 5px;
+}
+address a:hover {
+  color: rgb(195, 0, 0);
+}
+address {
+  display: flex;
+  flex-direction: column;
+}
+
+.box:hover {
+  filter: grayscale(0);
+}
